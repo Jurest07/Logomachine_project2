@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* Изучить свойство */
+}
+
+.table td,
+table th {
+    border: 1px solid black;
+}
+
+.item:first-child {
+    color: red;
+}
+
+.item:only-child {
+    color: green;
+}
+
+.item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item:nth-child(odd){
+    font-size: 25px;
+}
+
+.item:nth-child(even){
+    font-size: 20px;
+}
+div.item:nth-of-type(odd){
+    color: blueviolet;
+}
+
+div.item:not(:last-of-type){
+    color:blue;
+}
+
+/* .item:hover{
+    border: 1px solid red;
+} */
+
+.item:active{
+    border: 1px solid red;
+}
+
+input{
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid pink;
+}
+input:valid{
+    border: 1px solid green;
+}
+input:invalid{
+    border: 1px solid red;
+}
+a:visited{
+    color: blueviolet;
+}
+
+.item::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: absolute;
+}
+
+.item::after{
+
+}
+
+.item::first-letter{
+
+}
+
+.item::first-line{
+    
+}
